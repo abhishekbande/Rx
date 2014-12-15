@@ -12,6 +12,7 @@
         $('#tab_logic').append('<tr id="addr' + (i + 1) + '"></tr>');
         i++;
     });
+   
     $("#delete_row").click(function () {
         if (i > 1) {
             $("#addr" + (i - 1)).html('');
@@ -23,7 +24,6 @@
 
 
     });
-
 
 
     $("#patientform").bootstrapValidator({
@@ -394,6 +394,29 @@
 
 });
 
+$("#Feesform").bootstrapValidator({
+
+    message: null,
+
+    feedbackicons: {
+        valid: 'glyphicon glyphicon-ok',
+        invalid: 'glyphicon glyphicon-remove',
+        validating: 'glyphicon glyphicon-refresh'
+    },
+
+    fields:
+            {
+                doctorfees: {
+                    validators: {
+                        notempty: {
+                            message: 'field is required'
+                        }
+                    }
+                }
+            }
+
+});
+
 function validatefields() {
 
 
@@ -530,5 +553,6 @@ function validatefields() {
             }
     });
 
-
  }
+
+

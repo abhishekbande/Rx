@@ -78,3 +78,44 @@
                 padding-top: 15px;
                 font-size: 40px;
             }
+            
+        
+        /* Prescription dosage table css */
+        .style7
+        {
+            width: 121px;
+        }
+        .style8
+        {
+            text-align: center;
+            width: 907px;
+        }
+        .style9
+        {
+            width: 907px
+        }
+        .style10
+        {
+            text-align: center;
+            width: 479px;
+        }
+        .style11
+        {
+            width: 479px;
+        }
+        .style13
+        {
+            width: 146px;
+        }
+        .style14
+        {
+            width: 149px;
+        }
+        
+        
+        #myCarousel .nav a small {
+            display:block;
+        }
+        #myCarousel .nav {
+            background:#FFF;
+        }
