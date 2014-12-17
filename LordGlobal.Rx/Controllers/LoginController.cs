@@ -33,7 +33,9 @@ namespace LordGlobal.Rx.Controllers
                 //if Authentication is successful
                 if (isLoginSuccess)
                 {
+                    .
 
+                    return RedirectToAction("DoctorDashboard","Dashboard");
                 }
                 // if Authentication failed
                 else
